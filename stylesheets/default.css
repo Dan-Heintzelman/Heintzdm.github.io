@@ -1,0 +1,168 @@
+/* Default CSS for Phase-0 DBC */
+
+/* Color Pallette
+* Tan: #f0d2b2;
+* Blue: #649af6;
+* Dark Brown: #422609
+* Orange: #f08237;
+********/
+
+/* General Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+  font-size: 1em;
+  font-family: Arial, Sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-color:#f0d2b2;
+ /* position:relative;*/
+}
+
+h2 {
+font-family: cursive;
+font-size: 2em;
+margin: 5px 0px;
+}
+
+/* Header Styling Elements */
+
+header {
+  /*display:inline-block;*/
+  Height: 175px;
+  /*margin-bottom: 50px;*/
+  background-color: white;
+  /*width: 100%;*/
+  float:left:;
+  border-bottom: 5px solid #649af6;
+  /*padding-bottom: 10px;*/
+}
+
+header > ul  {
+  list-style: none;
+  float:left;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:link {
+  color:#649af6;
+}
+
+header a:visited {
+  color:#649af6;
+}
+
+header a:hover {
+  color: #f08237;
+}
+#profile_pic {
+  float: left;
+  height: 100%;
+  /*border: 5px solid black;*/
+
+  /*display:inline-block;*/
+}
+
+/* Sidebar */
+
+aside {
+  width: 20%;
+  float:left;
+  padding-top: 25px;
+  margin-bottom: 100px;
+
+  /*display:inline-block;*/
+
+
+}
+
+aside  ul > li {
+
+  list-style: none;
+  margin-bottom:25px;
+  margin-right: 15px;
+  /*padding: 15px;*/
+  /*background-color: white;*/
+
+  /*border: 2px solid black;*/
+}
+
+aside a {
+  text-align: center;
+  display:block;
+  height: 50px;
+  width: 100px;
+  border: 2px solid #422609;
+  background:#649af6;
+  text-decoration: none;
+  font-weight:bold;
+  color: rgba(0,0,0,.6);
+  font-family: Helvetica;
+  line-height: 50px;
+
+}
+
+aside a:hover {
+  background:#767070;
+}
+
+a.current {
+  background:#767070;
+}
+
+
+/**** Main *****/
+
+main {
+  width: 80%;
+  float:right;
+  padding-left:30px;
+}
+
+/***** Footer *****/
+
+footer {
+
+
+  clear:both;
+  width:100%;
+  height: 50px;
+
+  background-color: #422609;
+  color:white;
+}
+
+footer > p {
+  text-align: center;
+  line-height: 50px;
+}
+
+footer a {
+  text-decoration: none:
+
+}
+
+footer a:link{
+  color: #649af6;
+}
+
+footer a:visited {
+  color: #649af6;
+}
+
+footer a:hover {
+  color: #f08237;
+}
+
+
+
+
