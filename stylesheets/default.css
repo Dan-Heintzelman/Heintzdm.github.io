@@ -25,9 +25,13 @@ body {
  /* position:relative;*/
 }
 
+h1 {
+/*font-size: 2em;*/
+}
+
 h2 {
 font-family: cursive;
-font-size: 2em;
+/*font-size: 2em;*/
 margin: 5px 0px;
 }
 
