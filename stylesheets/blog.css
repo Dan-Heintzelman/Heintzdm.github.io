@@ -1,0 +1,42 @@
+/* Blog CSS for Phase-0 DBC */
+
+/* Color Pallette
+* Tan: #f0d2b2;
+* Blue: #649af6;
+* Dark Brown: #422609
+* Orange: #f08237;
+********/
+
+
+/* Header Styling Elements */
+
+header {
+  height: 150px;
+  background-color: #649af6;
+  padding-top: 10px;
+  border-bottom:5px solid #422609;
+}
+
+header h1, header h2 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/*** MAIN  ***/
+
+ol  a {
+  text-decoration: none;
+}
+
+ol  a:link {
+  color:#f08237;
+}
+
+ol  a:visited {
+  color:#f08237;
+}
+
+ol  a:hover {
+  color:#649af6;
+}
+
