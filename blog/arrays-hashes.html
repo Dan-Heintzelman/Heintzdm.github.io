@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dan's Tech Blog</title>
+	<link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+	<link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+</head>
+<body>
+<header>
+	<h1>Dan's Tech Blog</h1>
+</header>
+<main>
+	<article>  <!-- Using article to separate each blog post if multiple posts per page -->
+		<h2>Morning arRays and breakfast Hashes </h2>
+		<h3>January 25, 2016<!-- <a href="#"># comments</a>--></h3>
+		<h3>Dan Heintzelman</h3>
+		<!-- <figure>
+			<img src="#">
+			<figcaption>caption</figcaption>
+		</figure>
+	-->
+		<section>
+		<h4>Arrays and Hashes - Breakfast of Champions</h4>
+		<p>When it comes to storing and organizing content in ruby, and in fact pretty much any coding language, Arrays and Hashes are the bread and butter. How many times, when interacting with a program, have you matched both an item with a value. First name is Dan, last name is Heintzelman etc. etc. etc. Most likely, that information was stored in a Hash. Also, if you've ever imputted an ordered list of values into a program where the actual "order" of elements was important, that data was stored in an array.
+</p>
+		<p> The most important thing is that Arrays and Hashes are both ways of storing multiple values and being able to easily retrieve them. The fundamental difference between an Array and a Hash is how items are stored. This important to know so that you can know in which situations you will call upon the power of each one. </p>
+		</section>
+		<section>
+		<h4>Lesson(0) - The Array</h4>
+		<p> Since this blog is clearly breakfast themed, I will start with an example pertaining to breakfast. Yesterday when I woke up to my belly grumbling, I knew I needed to pick up some breakfast items from the store. I took out my notepad and I wrote a list of items, numbering them from 1 to 10. If I were to store these in an array, I could simly use the following code.</p>
+		<code>
+ 				breakfast = [] #this establishes a new array <br>
+ 				breakfast = ["Eggs", "Bacon", "Butter","Biscuits","Goetta"]<br>
+		</code>
+		<p>
+			There you have it! I've just created an array that contains all of my breakfast items. Now, the critical thing to know here is <em>how</em> one would access items in this list. For instance, if I were to type:
+		</p>
+		<code>puts "Dan's favorite breakfast item is " + breakfast[4] + "."</code>
+		<p> I would be saying my favorite breakfast item is Goetta. By the way, if you've never tried it, I highly recommend it! The most important takeaway here is not that Goetta is delicious, but that items in an array are automatically assigned keys that you can use to access them, this is called the <em>index</em>. It starts from 0 and counts up. So even though Goetta is the 5th item, it is the 4th in the index.</p>
+		<p>
+		Now, what if you don't care as much about the actual order of items, or you want to have more intuitive ways to call items. Then we might want to use a Hash...(Belly grumbles as I think of corn beef hash)
+		</p>
+	</section>
+	<section>
+		<h4>Hash</h4>
+		<p>Let's use the same motif as before to describe why one would want to make a hash. Let's say that I'm developing a food ordering app for breakfast( *write down idea ). I might want to give someone options for their preffered type of carb, preferred type of protein, preffered beverage, etc.</p>
+		<p>
+			If I'm storing these types of values, I want to use a key that is easy to call upon. That is the power of hashes, I can make my own key <em>and</em> value!. So for the following app if I chose my desired options it woud look something like this.</p>
+			<code> breakfast_order = { </br>
+										:beverage => "Coffee"
+										:protein => "Goetta"
+										:eggs_type => "Over Easy"
+										:toast => "Wheat"
+
+			}
+		</code>
+		<p> Pretty neat!, right? Dan loves to start his morning with a breakfast_order[:beverage], breakfast_order[protein], and with his breakfast_order[eggs_type] next to a delicious piece of breakfast_order[toast], toast! Okay, doesn't sound efficient, but If I were taking thousands of orders a day, I could print a coherent string for thousands of people pretty easy.
+		</p>
+		<img class="screenshot" src="../imgs/goetta.jpg" alt="Goetta and Eggs">
+		</section>
+	</article>
+</main>
+<aside> <!-- All content in aside will be in sidebar on right -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Blog Home</a></li>
+			<li><a href="git_final.html">Blog 1 - Git</a></li>
+			<li><a href="css-concepts.html">Blog 2 - CSS</a></li>
+			<li><a href="arrays-hashes.html">Blog 3 - Arrays</a></li>
+			<li><a href="#">Blog 4</a></li>
+			<li><a href="#">Blog 5</a></li>
+			<li><a href="#">Blog 6</a></li>
+		</ul>
+	</nav>
+</aside>
+<footer> <!-- footer will have copyright/social media links/etc -->
+ <p> Blogging made possible by bloggers, bloggies, and bloggettes.</p>
+</footer>
+</body>
+</html>
+
