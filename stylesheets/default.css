@@ -7,6 +7,8 @@
 * Orange: #f08237;
 ********/
 
+/* WEB FONTS */
+@import url(https://fonts.googleapis.com/css?family=Iceberg);
 /* General Styling */
 
 * {
@@ -26,20 +28,32 @@ body {
 }
 
 h1 {
-/*font-size: 2em;*/
+/*text-align: center;*/
 }
 
 h2 {
-font-family: cursive;
-/*font-size: 2em;*/
-margin: 5px 0px;
+font-family: 'Iceberg', cursive;
+font-size: 2.5em;
+width: calc(100% - 2em);
+padding-top: 15px;
+text-align: center;
+margin: auto;
 }
+
+h3 {
+  font-family: 'Iceberg', cursive;
+  width: calc(100% - 1em);
+  text-align: center;
+  font-size: 2em;
+  margin-top:0;
+}
+
 
 /* Header Styling Elements */
 
 header {
   /*display:inline-block;*/
-  Height: 175px;
+  Height: 200px;
   /*margin-bottom: 50px;*/
   background-color: white;
   /*width: 100%;*/
@@ -48,11 +62,29 @@ header {
   /*padding-bottom: 10px;*/
 }
 
-header > ul  {
+.contact_links  {
   list-style: none;
-  float:left;
+  /*float:left;*/
+  text-align: center;
+
+
 }
 
+.contact_links li {
+  display: inline-block;
+  margin-right:50px;
+}
+.contact_links li:hover {
+  background-color: rgba(114,177,217,.9);
+  -webkit-transition: background-color 400ms;
+    -moz-transition: background-color 400ms;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+.contact_links li:last-child img {
+  margin-bottom: 5px
+}
 header a {
   text-decoration: none;
 }
