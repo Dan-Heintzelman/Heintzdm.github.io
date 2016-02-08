@@ -7,6 +7,13 @@
 * Orange: #f08237;
 ********/
 
+/* New Color Palette 1/7/16
+Blue: #1a455f; //rgba(26, 69, 95, 100)
+Brown: #72593d; //rgba(114, 89, 61, 100)
+Maroon: #482728; //rgba(72, 39, 40, 100)
+Grey: #635c51; //rgba(99, 92, 81, 100)
+Yellow: #e5a532; //rgba(229, 165, 50, 100)
+*/
 /* WEB FONTS */
 @import url(https://fonts.googleapis.com/css?family=Iceberg);
 /* General Styling */
@@ -23,26 +30,24 @@ html {
 
 body {
   margin: 0px;
-  background-color:#f0d2b2;
+  /*background-color:#f0d2b2;*/
  /* position:relative;*/
 }
 
-h1 {
-/*text-align: center;*/
-}
 
-h2 {
+
+h1 {
 font-family: 'Iceberg', cursive;
-font-size: 2.5em;
-width: calc(100% - 2em);
-padding-top: 15px;
+font-size: 3em;
+/*width: calc(100% - 2em);*/
+padding-top: 100px;
 text-align: center;
 margin: auto;
 }
 
 h3 {
   font-family: 'Iceberg', cursive;
-  width: calc(100% - 1em);
+  /*width: calc(100% - 1em);*/
   text-align: center;
   font-size: 2em;
   margin-top:0;
@@ -51,28 +56,35 @@ h3 {
 
 /* Header Styling Elements */
 
+
+
 header {
   /*display:inline-block;*/
-  Height: 200px;
-  /*margin-bottom: 50px;*/
+  /*Height: 200px;*/
+  margin-bottom: 50px;
   background-color: white;
   /*width: 100%;*/
   float:left:;
-  border-bottom: 5px solid #649af6;
+  /*border-bottom: 5px solid #649af6;*/
   /*padding-bottom: 10px;*/
 }
 
 .contact_links  {
+  /*display: inline-block;*/
   list-style: none;
   /*float:left;*/
   text-align: center;
+  /*margin: 80px 80px;*/
+  /*width: calc(100% - 2em);*/
+  background-color: lightgrey;
+  padding-top:10px 10px;
 
 
 }
 
 .contact_links li {
   display: inline-block;
-  margin-right:50px;
+  margin: 15px 15px;
 }
 .contact_links li:hover {
   background-color: rgba(114,177,217,.9);
@@ -90,58 +102,53 @@ header a {
 }
 
 header a:link {
-  color:#649af6;
+  color:rgba(26, 69, 95, 100);
 }
 
 header a:visited {
-  color:#649af6;
+  color:rgba(26, 69, 95, 100);
 }
 
 header a:hover {
   color: #f08237;
 }
-#profile_pic {
-  float: left;
-  height: 100%;
-  /*border: 5px solid black;*/
 
-  /*display:inline-block;*/
-}
 
-/* Sidebar */
+/* SIDEBAR */
 
 aside {
-  width: 20%;
-  float:left;
-  padding-top: 25px;
-  margin-bottom: 100px;
+  width: 100%;
+  margin-top: 50px;
+  /*float:left;*/
 
   /*display:inline-block;*/
+}
 
+.main_buttons {
+  text-align: center;
+}
+
+
+.main_buttons > ul > li   {
+  /*float:left;*/
+  display:inline-block;
+  /*text-align: center;*/
+  margin: 20px 20px;
 
 }
 
-aside  ul > li {
 
-  list-style: none;
-  margin-bottom:25px;
-  margin-right: 15px;
-  /*padding: 15px;*/
-  /*background-color: white;*/
-
-  /*border: 2px solid black;*/
-}
 
 aside a {
   text-align: center;
   display:block;
   height: 50px;
   width: 125px;
-  border: 2px solid #422609;
-  background:#649af6;
+  /*border: 2px solid #422609;*/
+  background:rgba(72, 39, 40, 100);
   text-decoration: none;
   font-weight:bold;
-  color: rgba(0,0,0,.6);
+  color: #fff;
   font-family: Helvetica;
   line-height: 50px;
 
@@ -159,27 +166,33 @@ a.current {
 /**** Main *****/
 
 main {
-  width: 80%;
-  float:right;
-  padding-left:30px;
+  width: 100%;
+  /*float:right;*/
+  /*padding-left:30px;*/
+}
+
+main > p {
+  text-align: center;
 }
 
 /***** Footer *****/
 
 footer {
 
-
+  position:fixed;
+  bottom:0px;
   clear:both;
   width:100%;
-  height: 50px;
+  height: 75px;
+  margin-top: 20px;
 
-  background-color: #422609;
+  background-color: rgba(26, 69, 95, 100);
   color:white;
 }
 
 footer > p {
   text-align: center;
-  line-height: 50px;
+  line-height: 75px;
 }
 
 footer a {
@@ -188,17 +201,77 @@ footer a {
 }
 
 footer a:link{
-  color: #649af6;
-}
-
-footer a:visited {
-  color: #649af6;
-}
-
-footer a:hover {
   color: #f08237;
 }
 
+footer a:visited {
+  color: #f08237;
+}
+
+footer a:hover {
+  color: rgba(72, 39, 40, 100);
+}
 
 
 
+
+/* ABOUT ME PAGE */
+
+header.about_header h1 {
+  padding-top: 10px;
+}
+
+aside.about_aside   {
+  margin-top: 10px;
+}
+
+#profile_pic {
+  text-align: center;
+  display:block;
+
+  margin:auto;
+  border: 5px solid black;
+
+  /*display:inline-block;*/
+}
+
+main.about_main figure {
+  /*height: 80px;*/
+}
+
+.about_main figcaption {
+  text-align: center;
+  margin-top:20px;
+  font-family: 'Iceberg', cursive;
+  font-size: 1.5em;
+}
+
+.about_main {
+margin: auto;
+width: 100%;
+margin-bottom: 100px;
+
+
+}
+
+.about_main h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin left: 15px;
+  text-align: left;
+}
+
+.about_main p {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom:20px;
+  padding:20px;
+  background-color: rgba(114, 89, 61, 100);
+  /*color:#fff;*/
+}
+
+.about_main article {
+  margin:auto;
+  width: 95%;
+  background-color: lightgrey;
+}
