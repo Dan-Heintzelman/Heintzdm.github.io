@@ -13,11 +13,22 @@ Code Block:
 
 /* Header Styling Elements */
 
-header {
-  height: 150px;
-  background-color: #649af6;
+#blog_header {
+  background-color:
+  height: 50px;
+  background-color: lightgrey;
   padding-top: 10px;
   border-bottom:5px solid #422609;
+  margin-bottom: 0px;
+}
+
+#blog_header > nav > ul > li {
+  display:inline-block;
+  font-size: 1.5em;
+}
+
+#blog_header nav {
+  text-align: center;
 }
 
 header h1, header h2 {
@@ -52,3 +63,27 @@ code {
   display:inline-block;
   padding: 4px 4px;
 }
+
+/* MAIN ITEMS */
+
+h1 {
+  padding-top: 50px;
+}
+
+main  {
+  width: 100%;
+  /*float:right;*/
+}
+
+ol {
+text-align: center;
+}
+
+ol > li {
+  margin: 15px 15px;
+}
+
+aside {
+  width: 10%;
+}
+
