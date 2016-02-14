@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dan's Tech Blog</title>
+	<link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+	<link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+</head>
+<body>
+<header>
+	<h1>Dan's Tech Blog</h1>
+</header>
+<main>
+	<article>  <!-- Using article to separate each blog post if multiple posts per page -->
+		<h2>Ruby vs. JS</h2>
+		<h3>February 14, 2016<!-- <a href="#"># comments</a>--></h3>
+		<h3>Dan Heintzelman</h3>
+		<!-- <figure>
+			<img src="#">
+			<figcaption>caption</figcaption>
+		</figure>
+	-->
+		<section>
+		<h4>You say Tomatoes, I say Javascript</h4>
+			<p>  For this discussion, I am going to talk about Ruby Hashes vs Javascript Objects. The reason I think it's important to discuss this is because they LOOK very similar, but the way they are accessed is quite different.</p>
+		</section>
+		<section>
+		<h4>Ruby Hashes</h4>
+		<p>Ruby hashes can be written in many ways actually. Here are two common ways.</p>
+		<p><b>First Way - Using Hash Separator.</b></p>
+		<code>
+		hash = { <br>
+	:fname => <q>Dan</q>, <br>
+	:lname => <q>Heintzelman</q>, <br>
+} <br>
+	</code>
+		<p><b>Second Way - Using just the symbol to separate key/value.</b></p>
+		<code>
+		hash = { <br>
+	fname: <q>Dan</q>, <br>
+	lname: <q>Heintzelman</q>, <br>
+} <br>
+		</code>
+		<p>To access the value of my first name, I have to use hash[:fname]. The key goes between brackets.</p>
+	</section>
+	<section>
+	<h4>JavaScript Objets</h4>
+	<p>Everything in Javascript is an object, so I think it is important to demonstrate this.</p>
+	<code>
+	var objectDan = { <br>
+	fname: <q>Dan</q>,    <br>
+	lname: <q>Heintzelman</q>,  <br>
+	height: 6	  <br>
+} <br>
+	</code>
+	<p>Notice how similar the object literal construction of both the hash in ruby and the object in Javascript. However, instead of using brackets to pull the value, in Javascript, you have to use dots.  To access my firstname, I would have to call <code>objectDan.fname</code> . This <q>fname</q> is a property of the object Dan. One of the keys to understanding JS is that every object has properties. If you don't make a property for it, it doesn't mean they don't exist. Also, dot notation can be used to call a function that lives within a property.Let's add a property that is a function to the object objectDan.</p>
+	<code>
+	var objectDan = { <br>
+	fname: <q>Dan</q>,    <br>
+	lname: <q>Heintzelman</q>,  <br>
+	height: 6	  <br>
+	printName: function printName(){ <br>
+    console.log(this.fname + ' ' + this.lname) <br>
+  } <br>
+ } <br>
+ objectDan.printName(); <br>
+ // this prints to the console Dan Heintzelman <br>
+</code>
+<p> See how that works? It's important to note that when I call a function using the dot notation, I must put empty parenthesis after the function. If it requires an argument value, then I can inlcude the values within the parenthesis.</p>
+	</section>
+
+	</article>
+</main>
+<aside> <!-- All content in aside will be in sidebar on right -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Blog Home</a></li>
+			<li><a href="git_final.html">Blog 1 - Git</a></li>
+			<li><a href="css-concepts.html">Blog 2 - CSS</a></li>
+			<li><a href="arrays-hashes.html">Blog 3 - Arrays</a></li>
+			<li><a href="enumerable-methods.html">Blog 4 - Enum</a></li>
+			<li><a href="ruby-classes.html">Blog 5 - Classes</a></li>
+			<li><a href="JavaScript.html">Blog 6 - JS</a></li>
+		</ul>
+	</nav>
+</aside>
+<footer> <!-- footer will have copyright/social media links/etc -->
+ <p> Blogging made possible by bloggers, bloggies, and bloggettes.</p>
+</footer>
+</body>
+</html>
+
