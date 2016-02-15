@@ -9,6 +9,7 @@
 
 /* New Color Palette 1/7/16
 Blue: #1a455f; //rgba(26, 69, 95, 100)
+Green: rgba(26, 69, 45, 100);
 Brown: #72593d; //rgba(114, 89, 61, 100)
 Maroon: #482728; //rgba(72, 39, 40, 100)
 Grey: #635c51; //rgba(99, 92, 81, 100)
@@ -55,6 +56,14 @@ h3 {
 
 
 /* Header Styling Elements */
+
+header.main_header h1 {
+  padding-top: 10px;
+}
+
+aside.main_aside   {
+  margin-top: 10px;
+}
 
 
 
@@ -175,7 +184,66 @@ main > p {
   text-align: center;
 }
 
-/***** Footer *****/
+/* PROJECT PAGE UNIQUE STYLING */
+
+.projects_main section {
+
+  margin:auto;
+  width: 30%;
+  background-color: rgba(26, 69, 45, 100);
+
+}
+
+.projects_main ul li {
+  list-style: none;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-family: Iceberg;
+}
+.projects_main ul {
+  margin-top: 20px;
+}
+
+.projects_main {
+margin-bottom: 100px;
+}
+
+
+.projects_main a {
+  text-decoration: none;
+}
+
+.projects_main a:link {
+  color:#e5a532;
+}
+
+.projects_main a:visited {
+  color:#e5a532;
+}
+
+.projects_main a:hover {
+  color: #f08237;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** Global Footer *****/
 
 footer {
 
@@ -215,15 +283,9 @@ footer a:hover {
 
 
 
-/* ABOUT ME PAGE */
 
-header.about_header h1 {
-  padding-top: 10px;
-}
 
-aside.about_aside   {
-  margin-top: 10px;
-}
+
 
 #profile_pic {
   text-align: center;
@@ -235,9 +297,8 @@ aside.about_aside   {
   /*display:inline-block;*/
 }
 
-main.about_main figure {
-  /*height: 80px;*/
-}
+/* ABOUT ME PAGE */
+
 
 .about_main figcaption {
   text-align: center;
