@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dan's Tech Blog</title>
+	<link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+	<link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+</head>
+<body>
+<header>
+	<h1>Dan's Tech Blog</h1>
+</header>
+<main>
+	<article>  <!-- Using article to separate each blog post if multiple posts per page -->
+		<h2>SQL Injection</h2>
+		<h3>February 21, 2016<!-- <a href="#"># comments</a>--></h3>
+		<h3>Dan Heintzelman</h3>
+		<!-- <figure>
+			<img src="#">
+			<figcaption>caption</figcaption>
+		</figure>
+	-->
+	<section>
+		<h4>SQL Injection : A high level overview</h4>
+		<p>These days, it is more important than it ever has been to implement the highest standard of security when it comes to data that can be accessed over the internet. Our credit cards, names, home addresses, and many other pieces of vital information are stored in databases on servers all over the world.
+		</p>
+		<p>SQL injection is one way that hackers have been able to access, corrupt, and rewrite information stored in databases, and they have been doing it for years. It is important to understand a little bit about how they are able to do this.
+	</section>
+
+	<section>
+		<h4>User Input = The Hackers Terminal</h4>
+		<p>SQL queries are happening multiple times per day in your life whether you are aware of it or not. When you go online on your bank's website to log in, your username is correlated to your password through a table.  Your user input gets used to fill in the values of a SQL query statement. For instance <code> SELECT from USERS where userInput = name;</code> In this case, userInput would be the string that the user ented in the user field. Let's just say that the hacker entered the value name for username and it turned the statement into name = name. Since name is always equal to name, this could potentially return all of the usernames in the database back to the hacker.</p>
+		<p> In reality, bank websites likely have many more layers of security than that, however, this is essentially how SQL injection allows hackers to <q>inject</q> commands into your server. Fortunately, SQL injection can be avoided by using <q>SQL parameters</q> to filter out such attacks.
+	</section>
+	<section>
+		<h4>Protect Yourself - Read OWAP</h4>
+		<p>OWAP, <i>The Open Web Application Security Project</i>, provides detailed information about web security free to the public! They have a specific aritcle on how to easily prevent SQL injection attacks. I highly recommend you use <a target="_blank" href="https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet">this resource</a> if you want to learn more!</p>
+
+	</section>
+
+	</article>
+</main>
+<aside> <!-- All content in aside will be in sidebar on right -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Blog Home</a></li>
+			<li><a href="git_final.html">Blog 1 - Git</a></li>
+			<li><a href="css-concepts.html">Blog 2 - CSS</a></li>
+			<li><a href="arrays-hashes.html">Blog 3 - Arrays</a></li>
+			<li><a href="enumerable-methods.html">Blog 4 - Enum</a></li>
+			<li><a href="ruby-classes.html">Blog 5 - Classes</a></li>
+			<li><a href="JavaScript.html">Blog 6 - JS</a></li>
+			<li><a href="tech.html">Blog 7 - Tech</a></li>
+		</ul>
+	</nav>
+</aside>
+<footer> <!-- footer will have copyright/social media links/etc -->
+ <p> Blogging made possible by bloggers, bloggies, and bloggettes.</p>
+</footer>
+</body>
+</html>
