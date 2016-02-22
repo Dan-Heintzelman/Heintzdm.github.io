@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dan Heintzelman : Cheat Sheet</title>
+        <link type= "text/css" rel="stylesheet" href="../stylesheets/reset.css">
+        <link type= "text/css" rel="stylesheet" href="../stylesheets/default.css">
+        <link type= "text/css" rel="stylesheet" href="../stylesheets/cheat_sheet.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Index page for DBC">
+        <meta name="author" content="Dan Heintzelman">
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+<body>
+  <aside class="main_aside">
+  <nav class="main_buttons"> <!-- Side Bar with Nav -->
+  <ul>
+    <li><a href="../about.html">About Me</a></li>
+    <li><a href="#">Resume</a></li>
+    <li><a href="../blog/index.html">Blog</a></li>
+    <li><a class = "current" href="index_projects.html">Projects</a></li>
+  </ul>
+  </nav>
+</aside>
+<header class= "main_header">
+  <!-- <img id= "profile_pic" src="imgs/EmilyWedding_Crop.jpeg" alt="Profile Picture"> -->
+  <a id="main_home" href="../index.html"><h1>Dan Heintzelman</h1></a>
+  <ul class="contact_links">
+    <li><a href="mailto:heintzelman@gmail.com"><img src="../imgs/Google.png"></a></li>
+    <li><a href="https://www.instagram.com/daanimaldan/"><img src="../imgs/Instagram.png"></a></li>
+    <li><a href="https://www.linkedin.com/profile/view?id=AAMAABrvvmwBbMdD8aPW2Yoxzz0Rw47HnVZV5Is&trk=hp-identity-name" target="_blank"><img src="../imgs/LinkedIn.png"></a></li>
+  </ul>
+  <h3>Web Developer</h3>
+</header>
+
+<main class = "projects_sheet">
+
+<section class="sheetLeft">
+  <h3>Ruby</h3>
+
+  <article>
+  <h4>Array Methods</h4>
+  <code>
+  ADD TO ARRAY: <br>
+  arr = [1, 2, 3, 4] <br>
+arr.push(5) #=> [1, 2, 3, 4, 5] <br>
+arr << 6    #=> [1, 2, 3, 4, 5, 6] <br>
+  </code>
+
+  <ul>
+    <li>Other ways to add to an array:</li>
+    <li>arr.unshift</li>
+    <li>arr.insert(3, 'apple')</li>
+    <li>arr.insert(3, 'apple')</li>
+  </ul>
+  <code>
+  REMOVE FROM ARRAY: <br>
+  arr.delete_at(2) #=> 4<br>
+arr #=> [2, 3, 5]<br>
+  </code>
+  <ul>
+    <li>Other ways to remove from an array:</li>
+    <li>arr.pop</li>
+    <li>arr.shift</li>
+    <li>arr.uniq</li>
+  </ul>
+  <code>
+  ITERATE THROUH ARRAY: <br>
+  aarr.map { |a| 2*a }   #=> [2, 4, 6, 8, 10] <br>
+  arr                   #=> [1, 2, 3, 4, 5]   <br>
+  </code>
+  <ul>
+    <li>Other ways to iterate through an array:</li>
+    <li>arr.each</li>
+    <li>words.reverse_each</li>
+    <li>arr.map! (Destructive)</li>
+  </ul>
+  <p>For more detail about the above examples, vist the Ruby Docs on<a href="http://ruby-doc.org/core-2.2.0/Array.html" target= "_blank"> Array Methods.</a>
+  </p>
+  </article>
+</section>
+<section class="sheetRight">
+  <h3>JavaScript</h3>
+  <article>
+  <h4>Objects</h4>
+
+<code>
+Create an object: <br>
+var myCar = new Object();<br>
+myCar.make = "Ford";<br>
+myCar.model = "Mustang";<br>
+myCar.year = 1969;<br>
+</code>
+<code>
+Access and/or create properties: <br>
+myCar["make"] = "Ford"; <br>
+myCar["model"] = "Mustang"; <br>
+myCar["year"] = 1969; <br>
+</code>
+<code>
+Constructor Functions: <br>
+function Car(make, model, year) {<br>
+  this.make = make; <br>
+  this.model = model; <br>
+  this.year = year; <br>
+}
+</code>
+<code>
+  Make an Object using contructor: <br>
+  var mycar = new Car("Eagle", "Talon TSi", 1993); <br>
+</code>
+<article>
+<h4>Enumerables</h4>
+<code>
+Iterate over enumarable properties of an object:<br>
+for (variable in object) {...<br>
+}<br>
+</code>
+<code>
+  Return an array of properties of object:<br>
+  var arr = ['a', 'b', 'c'];<br>
+  console.log(Object.getOwnPropertyNames(arr).sort()); // logs '0,1,2,length'<br>
+</code>
+<p> For more detail about the above examples and a great guide on working with objects, visit Mozilla's <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects" target= "_blank">working with objects</a> page.
+</p>
+</article>
+
+
+
+
+
+</section>
+</article>
+
+
+</main>
+
+<footer>
+  <!-- add content here, like a link to DBC potentially -->
+  <p>Thanks for visiting my site, you may open Canvas in a new window by clicking <a href="https://devbootcamp.instructure.com/courses/" target="_blank">here</a></p>
+</footer>
+
+</body>
+</html>
