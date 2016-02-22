@@ -1,0 +1,92 @@
+/* Default CSS for Phase-0 DBC */
+
+/* Color Pallette
+* Tan: #f0d2b2;
+* Blue: #649af6;
+* Dark Brown: #422609
+* Orange: #f08237;
+********/
+
+/* New Color Palette 1/7/16
+Blue: #1a455f; //rgba(26, 69, 95, 100)
+Green: rgba(26, 69, 45, 100);
+Brown: #72593d; //rgba(114, 89, 61, 100)
+Maroon: #482728; //rgba(72, 39, 40, 100)
+Grey: #635c51; //rgba(99, 92, 81, 100)
+Yellow: #e5a532; //rgba(229, 165, 50, 100)
+*/
+/* WEB FONTS */
+@import url(https://fonts.googleapis.com/css?family=Iceberg);
+/* General Styling */
+
+/* PROJECTS - Subsection - cheat sheet */
+
+.projects_sheet {
+  float: none;
+  color: #e5a532;
+}
+
+.projects_sheet .sheetLeft {
+  width:40%;
+  /*display: block;*/
+  float: left;
+  /*height: 200px;*/
+  margin-left: 5%;
+  background-color: rgba(26, 69, 45, 100);
+  padding-top: 10px;
+  margin-bottom: 100px;
+}
+
+
+.projects_sheet .sheetRight {
+  width: 40%;
+  /*display: block;*/
+  float: right;
+  /*height: 200px;*/
+  margin-right: 5%;
+  background-color: rgba(26, 69, 45, 100);
+  padding-top: 10px;
+  margin-bottom: 100px;
+}
+
+.projects_sheet code {
+  background-color: black;
+  display: block;
+  line-height: 1.2em;
+  margin-top: 10px;
+
+}
+ .projects_sheet article {
+   padding: 10px;
+   border-top: solid 2px #e5a532;
+   margin-top: 10px;
+ }
+
+ .projects_sheet h4 {
+   text-align: center;
+ }
+
+ ul {
+   margin-top: 10px;
+   list-style: none;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+a:link {
+   color:black;
+ }
+
+a:visited {
+   color:black;
+ }
+
+a:hover {
+   color: #f08237;
+ }
+
+ p {
+  margin-top: 10px;
+ }
