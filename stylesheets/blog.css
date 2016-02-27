@@ -9,81 +9,50 @@
 Code Block:
 * Light Grey: #c3c3c3;
 ********/
+/* New Color Palette 1/7/16
+Blue: #1a455f; //rgba(26, 69, 95, 100)
+Green: rgba(26, 69, 45, 100);
+Brown: #72593d; //rgba(114, 89, 61, 100)
+Maroon: #482728; //rgba(72, 39, 40, 100)
+Grey: #635c51; //rgba(99, 92, 81, 100)
+Yellow: #e5a532; //rgba(229, 165, 50, 100)
 
 
 /* Header Styling Elements */
 
-#blog_header {
-  background-color:
-  height: 50px;
-  background-color: lightgrey;
-  padding-top: 10px;
-  border-bottom:5px solid #422609;
-  margin-bottom: 0px;
+
+header.blog_header {
+height: 150px;
+background: #e5a532;
+
+
 }
 
-#blog_header > nav > ul > li {
+h1.h1_blog {
+font-family: 'Iceberg', cursive;
+font-size: 2.5em;
+text-align: center;
+padding-top: 20px;
+}
+
+
+h2 {
+  padding-top: 20px;
+}
+
+h3 {
+
+}
+
+.blog_aside li {
   display:inline-block;
-  font-size: 1.5em;
 }
 
-#blog_header nav {
+.blog_aside ul {
   text-align: center;
-}
-
-header h1, header h2 {
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-/*** MAIN  ***/
-
-ol  a {
   text-decoration: none;
 }
 
-ol  a:link {
-  color:#f08237;
+.blog_aside a {
+  text-decoration: none;
 }
-
-ol  a:visited {
-  color:#f08237;
-}
-
-ol  a:hover {
-  color:#649af6;
-}
-
-img.screenshot {
-  width: 80%;
-}
-
-code {
-  background-color: #c3c3c3;
-  display:inline-block;
-  padding: 4px 4px;
-}
-
-/* MAIN ITEMS */
-
-h1 {
-  padding-top: 50px;
-}
-
-main  {
-  width: 100%;
-  /*float:right;*/
-}
-
-ol {
-text-align: center;
-}
-
-ol > li {
-  margin: 15px 15px;
-}
-
-aside {
-  width: 10%;
-}
-
