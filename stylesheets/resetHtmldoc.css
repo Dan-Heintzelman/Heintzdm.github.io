@@ -1,0 +1,400 @@
+/* COLOR PALETTE
+* Mitten Beige: rgb(218,185,142);
+* Beach Blue: rgba(114,177,217,.9);
+*
+*
+*
+*
+*
+*
+/*RESET @ TOP*/
+
+@import url("resetHtmldoc.css");
+
+/* WEB FONTS */
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+/*** suggesed font stack font-family: 'Monoton', cursive;**/
+
+/* Global Styles */
+
+body {
+
+	color:white;
+	font-size: 14px;
+	line-height: 1.5em;
+
+
+	background: url(../images/chitry3.jpg) repeat-y;
+	background-position:right top;
+	background-color: rgb(218,185,142);
+}
+
+
+a {
+
+	text-decoration: none;
+	color: #F93;
+}
+
+a:hover , a:active {
+
+	background-color:black;
+
+}
+
+
+/* Containers - Desktop Size */
+
+p  {
+	font-size: 1em;
+	line-height: 1em;
+}
+
+
+* {
+	box-sizing:border-box;
+}
+
+
+
+/* MastHead Design Elements */
+
+section.intro {
+
+
+}
+
+
+header {
+	background:
+	     url(../images/snowflaketree.png) no-repeat right,
+	     url(../images/iceglass.jpg) no-repeat ;
+	background-repeat:no-repeat, no-repeat;
+	background-size:300px 300px, cover;
+	height: 300px;
+
+}
+
+
+h1 {
+
+	padding: 40px 50px 30px 20px;
+	background-color:rgba(0,0,0,.0);
+	font-size: 3em;
+	line-height: 1;
+	font-family: 'Monoton', cursive;
+}
+h2 {
+
+	padding:15px;
+	background-color:rgba(114,177,217,.9);
+
+	font-size: 1.9em;
+	line-height: 1;
+	text-align: right;
+
+	padding-right:80px;
+}
+
+
+
+
+
+
+
+/******** INTRO MAIN **********/
+
+h3 {
+	padding-bottom: 10px;
+	font-size: 2em;
+
+
+	color:white;
+}
+
+
+
+.summary{
+
+
+
+	padding: 20px 50px;
+	text-align: center;
+	line-height: 2;
+	background-color:rgba(0,0,0,.4);
+	font-weight: bold;
+
+
+}
+.summary p:last-child  {
+	font-size:1.5em;
+	text-align: center;
+
+
+
+}
+
+.intro p{
+	line-height: 125%;
+	font-size: 1.2em;
+	padding-bottom: 10px;
+
+}
+
+
+/*********** MAIN FLOATS ***********/
+
+.intro .preamble {
+	background-color:rgba(0,0,0,.2);
+	padding-bottom: 20px;
+	float:left;
+	width:100%;
+
+}
+
+.preamble h3 {
+	text-align: center;
+	margin-top: 20px;
+	color:white;
+
+
+}
+
+
+
+
+
+
+
+
+.main.supporting
+{
+
+	text-align: left;
+	background-color:rgba(0,0,0,.6);
+	width:100%;
+	float:left;
+	clear:left;
+}
+
+
+
+.main.supporting p {
+
+
+	padding: 10px 40px 10px;
+	font-size: 1.2em;
+
+	text-align: left;
+	line-height: 1.2;
+
+
+}
+
+.main.supporting h3 {
+
+	margin-top:20px;
+	color:rgba(114,177,217,.9);
+	padding-left:20px;
+	border-right: solid rgb(218,185,142) 50px ;
+	border-left: solid rgb(218,185,142) 15px ;
+	/* I would like to convert these to clear if I plan to add more background images */
+
+
+}
+
+
+
+
+.preamble:hover, .main.supportin:hover {
+	background-color: rgba(114,177,217,.9);
+	-webkit-transition: background-color 800ms;
+    -moz-transition: background-color 800ms;
+    -o-transition: background-color 800ms linear;
+    -ms-transition: background-color 800ms linear;
+    transition: background-color 800ms linear;
+
+
+}
+
+
+
+
+
+/* Masthead and Menu Styles */
+
+
+/* Article Styles */
+
+
+
+
+
+/* MEDIA QUERIES - ADDITIONAL */
+
+
+@media screen and (min-width: 920px) {
+aside {
+	width:20%;
+	height:100%;
+
+
+	background-color: rgba(0,0,0,.7);
+	color:white;
+	position:fixed;
+	right:0;
+	top:0;
+	padding:10px;
+}
+
+aside .wrapper {
+	height: 550px;
+	overflow:scroll;
+}
+.page-wrapper {
+	width:75%;
+	position:relative;
+	margin-left:0;
+
+}
+aside li {
+	padding: 3px 8px;
+	font-size: 0.9em;
+	list-style: none;
+}
+.preamble p {
+	padding: 10px 60px;
+	font-weight: bold;
+
+}
+
+footer {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 919px) {
+
+	aside {
+	width:30%;
+	height:100%;
+	overflow: scroll;
+	background-color: rgba(0,0,0,.7);
+	color:white;
+	position:fixed;
+	right:0;
+	top:0;
+	padding:10px;
+}
+
+aside .wrapper {
+	height: 500px;
+	overflow:scroll;
+}
+
+.page-wrapper {
+	width:70%;
+	position:relative;
+	margin-left:0;
+
+}
+aside li {
+	padding: 2px 8px;
+	font-size: 0.8em;
+	list-style: none;
+}
+.preamble p {
+	padding: 10px 30px;
+	font-weight: bold;
+
+}
+footer {
+
+/* Only working on local server- not on host *
+	position:fixed;
+	width:25%;
+
+
+
+
+	font-size: 1.4em;
+	right:0;
+	bottom:0;
+	z-index: 100;
+***/
+
+}
+
+
+
+
+
+}
+
+
+/* Image Styles */
+
+
+/* Footer Styles */
+
+
+
+aside h3 {
+	font-size: 1.4em;
+	padding:0;
+	margin-top: 5px;
+
+}
+
+
+aside li a:nth-child(2n) {
+	color:rgba(114,177,217,.9);
+}
+
+.requirements p:last-child  {
+	text-align: center;
+	font-weight: bold;
+
+	background-color:rgba(0,0,0,.7);
+	font-size: 1em;
+	padding: 30px 0px;
+	margin-top:20px;
+}
+
+footer {
+	position:fixed;
+	width:25%;
+
+
+
+
+	font-size: 1.4em;
+	right:0;
+	bottom:0;
+	z-index: 100;
+}
+
+
+
+footer a{
+
+	color:white;
+	background-color:rgba(114,177,217,.9);
+	display: inline-block;
+	text-align: right;
+}
+
+footer a:before{
+	content:": "
+}
